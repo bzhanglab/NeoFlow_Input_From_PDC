@@ -7,10 +7,11 @@ fusion_link <- args[3]
 output_file <- args[4]
 
 pdc_table <- read.delim(pdc_table_file)
-colnames(pdc_table) <- c("experiment", "mzml_files", "mzml_links")
+colnames(pdc_table) <- c("experiment_id", "mzml_files", "mzml_links")
 mapping_table <- read.delim(mapping_table_file)
 
-output_data <- left_join(mapping_table, pdc_table, by="experiment")
+output_data <- left_join(mapping_table, pdc_table, by="experiment_id")
+output_data$experiment_id <- NULL
 output_data$fusion <- paste(fusion_link, output_data$sample, "_T/fusions.tsv", sep="")
 output_data$sample <- paste(output_data$experiment, output_data$sample, sep="_")
 
