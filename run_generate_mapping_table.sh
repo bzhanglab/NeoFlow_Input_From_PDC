@@ -28,4 +28,4 @@ Rscript process_gdc_table.R ./PDC_file_manifest_03022021_153834.csv ./PDC_file_m
 ###3. Fusion results link
 ###Output
 ###1. Final mapping table
-Rscript generate_mapping_table.R ./PDC_file_manifest_processed_table.txt ./HNSCC_pre_mapping_table.txt fusion/ ./HNSCC_mapping_table.txt
+Rscript generate_mapping_table.R ./PDC_file_manifest_processed_table.txt ./HNSCC_pre_mapping_table.txt fusion/ ./HNSCC_mapping_table.txt T
