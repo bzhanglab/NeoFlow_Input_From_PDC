@@ -1,0 +1,6 @@
+*data
+*.tsv
+*.csv
+.vscode
+*.txt
+*.tgz
