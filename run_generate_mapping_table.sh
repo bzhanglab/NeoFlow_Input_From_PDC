@@ -31,3 +31,7 @@ Rscript process_gdc_table.R ./PDC_file_manifest_03262021_130720.csv ./PDC_file_m
 ###Output
 ###1. Final mapping table
 Rscript generate_mapping_table.R ./PDC_file_manifest_processed_table.txt ./BRCA_pre_mapping_table.txt fusion/ /data/PGET_data_freeze_v1.0/data_available_table_v1.0/BRCA_confirmatory-data-availability.txt ./BRCA_mapping_table.txt F
+
+
+### check manifest file:
+Rscript manifest_file_checker.R manifest_file_checker_test_data/LUAD_mapping_table.txt manifest_file_checker_test_data/LUAD-somatic-mutation.maf manifest_file_checker_test_data/luad_gene_fusion_2020_12_17.tgz
