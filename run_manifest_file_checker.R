@@ -1,0 +1,1 @@
+Rscript manifest_file_checker.R manifest_file_checker_test_data/LUAD_mapping_table.txt manifest_file_checker_test_data/LUAD-somatic-mutation.maf manifest_file_checker_test_data/luad_gene_fusion_2020_12_17.tgz
